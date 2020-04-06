@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- main中的代码涉及到了es6的新语法,但是浏览器不识别,main不能直接引入,所以通过webpack这个前端
+    构建工具,把main.js做了一下处理,生成了一个bundle.js文件-->
+    <!--<script src="../dist/bundle.js"></script>-->
+    <!--webpack-dev-server会帮我打包main.js文件,输出到内存的/目录下-->
+    <!--当使用html-webpack-plugin之后,我们不再需要手动处理bundle.js的引用路径了,因为这个插件已经帮我们自动
+    创建了一个合适的srcipt,并且引用了正确的路径-->
+    <!--<script src="/bundle.js"></script>-->
+
+    <!--不要这么做,会产生二次请求-->
+    <!--
+        <link rel="stylesheet" href="./src/css/index.css">
+    -->
+
+</head>
+<body>
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+        <li>这是第9个li</li>
+        <li>这是第10个li</li>
+    </ul>
+</body>
+</html>
